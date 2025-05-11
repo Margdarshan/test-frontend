@@ -52,7 +52,7 @@ const PredictorForm = () => {
     if (!isAuthenticated) {
       setReload(true);
       localStorage.setItem('formData', JSON.stringify(data));
-      localStorage.setItem('currentRoute', '/frontend/collegepredictorresult');
+      localStorage.setItem('currentRoute', '/collegepredictorresult');
       setIsLoginModalOpen(true);
       return;
     }
@@ -88,7 +88,7 @@ const PredictorForm = () => {
         console.log('this is th reload', reload)
         if (reload) {
           console.log('this isgg th reload', reload)
-          navigate('/frontend/collegepredictorresult', {
+          navigate('//edictorresult', {
             state: {
               receivedData: response.college_list,
               categories: modifiedCategory,
@@ -98,7 +98,7 @@ const PredictorForm = () => {
             replace: true,
           });
         }
-        navigate('/frontend/collegepredictorresult', {
+        navigate('//edictorresult', {
           state: {
             receivedData: response.college_list,
             categories: modifiedCategory,
@@ -118,7 +118,7 @@ const PredictorForm = () => {
   //   if (!isAuthenticated) {
   //     setReload(true);
   //     localStorage.setItem('formData', JSON.stringify(data));
-  //     localStorage.setItem('currentRoute', '/frontend/collegepredictorresult');
+  //     localStorage.setItem('currentRoute', '//edictorresult');
   //     setIsLoginModalOpen(true);
   //     return;
   //   }
@@ -151,7 +151,7 @@ const PredictorForm = () => {
   //       if (response) {
   //         console.lo
   //         if (reload) {
-  //           navigate('/frontend/collegepredictorresult', {
+  //           navigate('//edictorresult', {
   //             state: {
   //               receivedData: response.college_list,
   //               categories: modifiedCategory,
@@ -159,10 +159,10 @@ const PredictorForm = () => {
   //               gender: data.gender,
   //             }, replace: true,
   //           });
-  //           // window.location.assign('/frontend/collegepredictorresult');
+  //           // window.location.assign('//edictorresult');
   //         }
   //         else {
-  //           navigate('/frontend/collegepredictorresult', {
+  //           navigate('//edictorresult', {
   //             state: {
   //               receivedData: response.college_list,
   //               categories: modifiedCategory,

@@ -30,11 +30,11 @@ export const useVerifyOtp = (closeModal, email) => {
         login(data.user, data.token, email);
 
         if (data.new_user) {
-          navigate(`/frontend/PersonalDetails?email=${email}`, {
+          navigate(`/PersonalDetails?email=${email}`, {
             state: { email },
           });
         } else if (storedPath) {
-          if (storedPath === '/frontend/collegepredictorresult') {
+          if (storedPath === '//edictorresult') {
             setLoginRedirectDone(true);
             localStorage.removeItem('currentRoute');
           } else {

@@ -59,11 +59,11 @@ const StoreMobileNavbar = ({ setIsMobileNavbarOpen }) => {
       title: 'Study Material',
       icon: <FaRegFile />,
       items: [
-        ['Comprehensive Formula Books', '/frontend/commingsoon'],
-        ['Textbooks and Practice Notebooks', '/frontend/text-books'],
-        ['Revision Notes', '/frontend/revision-notes'],
-        ['Previous Year Paper for JEE', '/frontend/previous-year'],
-        ['Detailed Topic Wise Notes', '/frontend/commingsoon'],
+        ['Comprehensive Formula Books', '/commingsoon'],
+        ['Textbooks and Practice Notebooks', '//s'],
+        ['Revision Notes', '//notes'],
+        ['Previous Year Paper for JEE', '//year'],
+        ['Detailed Topic Wise Notes', '//on'],
       ],
     },
 
@@ -72,8 +72,8 @@ const StoreMobileNavbar = ({ setIsMobileNavbarOpen }) => {
       title: 'Test Series',
       icon: <FaRegFile />,
       items: [
-        ['JEE Main Test Series', '/frontend/commingsoon'],
-        ['JEE Advanced Test Series', '/frontend/commingsoon'],
+        ['JEE Main Test Series', '//on'],
+        ['JEE Advanced Test Series', '//on'],
       ],
     },
     {
@@ -81,9 +81,9 @@ const StoreMobileNavbar = ({ setIsMobileNavbarOpen }) => {
       title: 'Exams',
       icon: <CgNotes />,
       items: [
-        ['JEE Main', '/frontend/commingsoon'],
-        ['JEE Advanced', '/frontend/commingsoon'],
-        ['BITSAT', '/frontend/commingsoon'],
+        ['JEE Main', '//on'],
+        ['JEE Advanced', '//on'],
+        ['BITSAT', '//on'],
       ],
     },
     {
@@ -91,8 +91,8 @@ const StoreMobileNavbar = ({ setIsMobileNavbarOpen }) => {
       title: 'Top 10 Colleges',
       icon: <MdOutlineAssignment />,
       items: [
-        ['Last year cutoff for JoSAA', '/frontend/commingsoon'],
-        ['Marks vs Percentile for JEE Mains', '/frontend/commingsoon'],
+        ['Last year cutoff for JoSAA', '//on'],
+        ['Marks vs Percentile for JEE Mains', '//on'],
       ],
     },
     {
@@ -100,8 +100,8 @@ const StoreMobileNavbar = ({ setIsMobileNavbarOpen }) => {
       title: 'Quick Links',
       icon: <FaRegFile />,
       items: [
-        ['Last year cutoff for JoSAA', '/frontend/commingsoon'],
-        ['Marks vs Percentile for JEE Mains', '/frontend/commingsoon'],
+        ['Last year cutoff for JoSAA', '//on'],
+        ['Marks vs Percentile for JEE Mains', '//on'],
       ],
     },
   ];
@@ -112,11 +112,11 @@ const StoreMobileNavbar = ({ setIsMobileNavbarOpen }) => {
       title: 'Study Material',
       icon: <FaRegFile />,
       items: [
-        ['Comprehensive Formula Books', '/frontend/commingsoon'],
-        ['Textbooks and Practice Notebooks', '/frontend/commingsoon'],
-        ['Revision Notes', '/frontend/commingsoon'],
-        ['Previous Year Paper', '/frontend/commingsoon'],
-        ['Detailed Topic Wise Notes', '/frontend/commingsoon'],
+        ['Comprehensive Formula Books', '//on'],
+        ['Textbooks and Practice Notebooks', '//on'],
+        ['Revision Notes', '//on'],
+        ['Previous Year Paper', '//on'],
+        ['Detailed Topic Wise Notes', '//on'],
       ],
     },
     {
@@ -124,8 +124,8 @@ const StoreMobileNavbar = ({ setIsMobileNavbarOpen }) => {
       title: 'Test Series',
       icon: <CgNotes />,
       items: [
-        ['CAT Test Series', '/frontend/commingsoon'],
-        ['XAT Test Series', '/frontend/commingsoon'],
+        ['CAT Test Series', '//on'],
+        ['XAT Test Series', '//on'],
       ],
     },
     {
@@ -133,9 +133,9 @@ const StoreMobileNavbar = ({ setIsMobileNavbarOpen }) => {
       title: 'Exams',
       icon: <MdOutlineAssignment />,
       items: [
-        ['CAT', '/frontend/commingsoon'],
-        ['XAT', '/frontend/commingsoon'],
-        ['SNAP', '/frontend/commingsoon'],
+        ['CAT', '//on'],
+        ['XAT', '//on'],
+        ['SNAP', '//on'],
       ],
     },
     {
@@ -143,8 +143,8 @@ const StoreMobileNavbar = ({ setIsMobileNavbarOpen }) => {
       title: 'Top 10 Colleges',
       icon: <MdOutlineAssignment />,
       items: [
-        ['Last year cutoff for JoSAA', '/frontend/commingsoon'],
-        ['Marks vs Percentile for JEE Mains', '/frontend/commingsoon'],
+        ['Last year cutoff for JoSAA', '//on'],
+        ['Marks vs Percentile for JEE Mains', '//on'],
       ],
     },
     {
@@ -152,8 +152,8 @@ const StoreMobileNavbar = ({ setIsMobileNavbarOpen }) => {
       title: 'Quick Links',
       icon: <FaRegFile />,
       items: [
-        ['Last year cutoff for MBA', '/frontend/commingsoon'],
-        ['Marks vs Percentile for CAT', '/frontend/commingsoon'],
+        ['Last year cutoff for MBA', '//on'],
+        ['Marks vs Percentile for CAT', '//on'],
       ],
     },
   ];
@@ -163,7 +163,7 @@ const StoreMobileNavbar = ({ setIsMobileNavbarOpen }) => {
       id: 'Mentorship',
       element: 'Mentorship',
       options: [],
-      to: 'frontend/mentorship',
+      to: "/iit-jee-mentorship",
     },
     {
       id: 'Engineering',
@@ -181,7 +181,7 @@ const StoreMobileNavbar = ({ setIsMobileNavbarOpen }) => {
       id: 'CollegePredictor',
       element: 'College Predictor',
       options: [],
-      to: 'frontend/collegepredictor',
+      to: '/collegepredictor',
     },
   ];
 

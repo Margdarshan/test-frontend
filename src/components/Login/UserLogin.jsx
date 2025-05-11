@@ -70,11 +70,11 @@ const LoginForm = ({ email, setEmail, handleSendCode, onCloseModel }) => {
         </form>
         <p className="mt-4 text-xs  text-black">
           By proceeding, you agree to Margdarshan{' '}
-          <a href="/frontend/terms-and-conditions" className="underline">
+          <a href="/terms-and-conditions" className="underline">
             T&C
           </a>{' '}
           and{' '}
-          <a href="/frontend/privacypolicy" className="underline">
+          <a href="//licy" className="underline">
             Privacy policy
           </a>
         </p>

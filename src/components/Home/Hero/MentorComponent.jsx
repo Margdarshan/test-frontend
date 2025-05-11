@@ -103,13 +103,13 @@ const MentorComponent = () => {
           <div className="hidden xl:flex space-x-2">
             <a
               className="flex justify-center mr-8 max-h-16 items-center py-4 text-center border border-[#4E18CD] bg-[#4E18CD] text-white rounded-xl px-8 max-w-56 font-manrope whitespace-nowrap"
-              href="/frontend/mentorship"
+              href="/iit-jee-mentorship"
             >
               Mentorship
             </a>
             <a
               className="flex justify-center items-center  max-h-16 py-4 border-2 border-[#4E18CD] text-[#4E18CD] rounded-xl text-center px-8 font-manrope whitespace-nowrap"
-              href="/frontend/collegepredictor"
+              href="/jee-main/collegepredictor"
             >
               College Predictor
             </a>
@@ -161,13 +161,13 @@ const MentorComponent = () => {
         <div className=" xl:hidden flex flex-col md:flex-row md:justify-center md:space-x-4 items-center mt-10 ">
           <a
             className="flex justify-center  items-center w-fit  py-4 border-2 border-[#4E18CD] text-[#4E18CD] rounded-xl text-center px-8 font-manrope "
-            href="/frontend/collegepredictor"
+            href="//edictor"
           >
             College Predictor
           </a>
           <a
             className="flex justify-center mt-4 md:mt-0 w-fit items-center py-4 text-center border border-[#4E18CD] bg-[#4E18CD] text-white rounded-xl px-8 max-w-56 font-manrope "
-            href="/frontend/mentorship"
+            href="//p"
           >
             Mentorship
           </a>

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import marglogo from '../img/marglogo.svg';
 import callicon from '../img/callicon.svg';
 import mailicon from '../img/mailicon.svg';
@@ -11,29 +11,40 @@ import facebook from '../img/facebook.svg';
 import youtube from '../img/youtube.svg';
 import PropTypes from 'prop-types';
 
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  });
-};
+// const scrollToTop = (url) => {
+//   const navigate = useNavigate();
+//   navigate(url)
+//   window.scrollTo({
+//     top: 0,
+//     behavior: 'smooth',
+//   });
+// };
 
 const address = 'Vijay Nagar Square, Indore, Madhya Pradesh, 452010';
 // Encode special characters in the address for proper URL formatting
 const encodedAddress = encodeURIComponent(address);
 
 const ContactInfo = () => {
+  const navigate = useNavigate();
+  const scrollToTop = (url) => {
+    navigate(url)
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <div className="flex flex-col md:w-[26%] max-lg:ml-0 max-lg:w-full">
       <div className="flex flex-col grow text-base text-neutral-800 max-lg:mt-10">
-        <a href="/frontend/" onClick={scrollToTop}>
+        <Link onClick={scrollToTop('/')}>
           <img
             loading="lazy"
             src={marglogo}
             alt="Margdarshan logo"
             className="max-w-full aspect-[5.26] lg:w-[215px] w-[150px]"
           />
-        </a>
+        </Link>
         <h2 className="mt-10 md:mt-24 text-xl font-medium text-violet-800 max-lg:mt-10">
           Get In Touch
         </h2>
@@ -78,12 +89,13 @@ const ContactInfo = () => {
 };
 
 const FooterSection = ({ title, items }) => {
+  const navigate = useNavigate()
   return (
     <div className="flex flex-col text-base text-neutral-800 max-lg:mt-10">
       <h3 className="text-xl font-medium text-violet-800">{title}</h3>
       {items.map((item, index) => (
-        <div key={index} className={`mt-${index === 0 ? 6 : 5}`}>
-          {item}
+        <div key={index} onClick={() => navigate(item.link)} className={`mt-${index === 0 ? 6 : 5}`}>
+          {item.label}
         </div>
       ))}
     </div>
@@ -94,107 +106,44 @@ FooterSection.propTypes = {
   items: PropTypes.arrayOf(PropTypes.node),
 };
 const Footer = () => {
+
   const sections = [
     {
       title: 'Top Exam',
       items: [
-        <Link key={1} to="/frontend/commingsoon" onClick={scrollToTop}>
-          JEE Main 2025
-        </Link>,
-        // <Link to="/frontend/commingsoon" onClick={scrollToTop}>
-        //   NEET 2025
-        // </Link>,
-        <Link key={2} to="/frontend/commingsoon" onClick={scrollToTop}>
-          GATE 2025
-        </Link>,
+        { label: "JEE Main 2025", link: "/commingsoon" },
+        { label: "GATE 2025", link: "/commingsoon" },
       ],
     },
     {
       title: 'Predictors',
       items: [
-        <Link key={3} to="/frontend/collegepredictor" onClick={scrollToTop}>
-          JEE Main College Predictor
-        </Link>,
-        <Link key={4} to="/frontend/commingsoon" onClick={scrollToTop}>
-          JEE Main Rank Predictor
-        </Link>,
-        <Link key={5} to="/frontend/commingsoon" onClick={scrollToTop}>
-          JEE Advanced Rank Predictor
-        </Link>,
-        // <Link to="/frontend/commingsoon" onClick={scrollToTop}>
-        //   NEET College Predictor
-        // </Link>,
+        { label: "JEE Main College Predictor", link: "//jee-main/collegepredictor" },
+        { label: "JEE Main Rank Predictor", link: "/commingsoon" },
+        { label: "JEE Advanced Rank Predictor", link: "/commingsoon" },
       ],
     },
     {
       title: 'Resources',
       items: [
-        <Link key={6} to="/frontend/commingsoon" onClick={scrollToTop}>
-          Q&A
-        </Link>,
-        <Link key={7} to="/frontend/commingsoon" onClick={scrollToTop}>
-          JEE Main Free Mock Test
-        </Link>,
-        <Link key={8} to="/frontend/commingsoon" onClick={scrollToTop}>
-          Zero Cost Test Series JEE
-        </Link>,
-        <Link key={9} to="/frontend/blog" onClick={scrollToTop}>
-          Blog
-        </Link>,
-        // <a href="https://marg-darshan.com/blogs">Blog</a>,
-        <Link key={10} to="/frontend/commingsoon" onClick={scrollToTop}>
-          Previous Year Papers
-        </Link>,
-        // <a href="/frontend/commingsoon">
-        //   NCERT Books
-        // </a>,
-        // <a href="https://marg-darshan.com/study-material/ncert-books/ncert-books-for-class-12th/ncert-books-for-class-12th-overall">
-        //   NCERT Books
-        // </a>,
-        <Link key={11} to="/frontend/commingsoon" onClick={scrollToTop}>
-          Notes
-        </Link>,
+        { label: "Q&A", link: "/commingsoon" },
+        { label: "JEE Main Free Mock Test", link: "/commingsoon" },
+        { label: "Zero Cost Test Series JEE", link: "/commingsoon" },
+        { label: "Blog", link: "/blog" },
+        { label: "Blog", link: "/blog" },
+        { label: "Notes", link: "/commingsoon" },
       ],
     },
     {
       title: 'Other Links',
       items: [
-        <Link key={12} to="frontend/about" onClick={scrollToTop}>
-          About Margdarshan
-        </Link>,
-        <Link key={13} to="frontend/about#contact" onClick={scrollToTop}>
-          Contact Us
-        </Link>,
-        <Link
-          key={14}
-          to="/frontend/terms-and-conditions"
-          target="_blank"
-          onClick={scrollToTop}
-        >
-          Terms & Conditions
-        </Link>,
-        <Link key={15} to="/frontend/career-page" onClick={scrollToTop}>
-          Careers
-        </Link>,
-        <Link
-          key={16}
-          to="/frontend/refund-cancel"
-          target="_blank"
-          onClick={scrollToTop}
-        >
-          Cancellation/Refund Policy
-        </Link>,
-        <Link
-          key={17}
-          href="/frontend/privacypolicy"
-          target="_blank"
-          onClick={scrollToTop}
-        >
-          Privacy Policy
-        </Link>,
-        <Link key={18} to="/frontend/shipping" target="_blank">
-          Shipping Policy
-        </Link>,
+        { label: "About Margdarshan", link: "/about" },
+        { label: "Contact Us", link: "//about#contact" },
+        { label: "Terms & Conditions", link: "/terms-and-conditions" },
+        { label: "Careers", link: "/commingsoon" },
+        { label: "Cancellation/Refund Policy", link: "/refund-cancel" },
+        { label: "Privacy Policy", link: "/privacypolicy" },
+        { label: " Shipping Policy", link: "/refund-cancel" }
       ],
     },
   ];

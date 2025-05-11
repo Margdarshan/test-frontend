@@ -10,34 +10,34 @@ import useNotification from '../../../core/components/Notification/useNotifiacti
 export const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const { adminName, role,  isAdminAuthenticated, adminLogout } = useAdminAuthStore(); // ✅ Get auth state from store
+  const { adminName, role, isAdminAuthenticated, adminLogout } = useAdminAuthStore(); // ✅ Get auth state from store
   const [showDropdown, setShowDropdown] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const notification = useNotification()
   const pathNameMap = {
-    '/frontend/admin/': 'Dashboard',
-    '/frontend/admin/blog-list': 'Blog List',
-    '/frontend/admin/blog-new': 'Add Blog',
-    '/frontend/admin/blog-comment': 'Blog Comment',
-    '/frontend/admin/blog-category': 'Blog Category',
-    '/frontend/admin/otp-message': 'OTP Message',
-    '/frontend/admin/users': 'Users',
-    '/frontend/admin/news-letter': 'Newsletter',
-    '/frontend/admin/study-material': 'Study Material',
-    '/frontend/admin/study-material/categories': 'Categories',
-    '/frontend/admin/study-material/categories/subcategories': 'Subcategories',
-    '/frontend/admin/study-material/categories/subcategories/material': 'Material',
+    '/admin/': 'Dashboard',
+    '/admin/blog-list': 'Blog List',
+    '/admin/blog-new': 'Add Blog',
+    '/admin/blog-comment': 'Blog Comment',
+    '/admin/blog-category': 'Blog Category',
+    '/admin/otp-message': 'OTP Message',
+    '/admin/users': 'Users',
+    '/admin/news-letter': 'Newsletter',
+    '/admin/study-material': 'Study Material',
+    '/admin/study-material/categories': 'Categories',
+    '/admin/study-material/categories/subcategories': 'Subcategories',
+    '/admin/study-material/categories/subcategories/material': 'Material',
   };
 
   const pathFormatter = (path) => {
     const formatted = path
-      .replace("/frontend/admin/", "")                
-      .replace(/-/g, " ")                              
-      .split("/")                                      
+      .replace("/admin/", "")
+      .replace(/-/g, " ")
+      .split("/")
       .map(part =>
-        part.charAt(0).toUpperCase() + part.slice(1)   
+        part.charAt(0).toUpperCase() + part.slice(1)
       )
-      .join(" / ");                                     
+      .join(" / ");
     return formatted;
   };
   const currentPathName = pathNameMap[location.pathname] || 'Dashboard';
@@ -57,7 +57,7 @@ export const Navbar = () => {
 
   const handleLogout = () => {
     adminLogout();
-    navigate('/frontend/admin/login');
+    navigate('/admin/login');
     notification('Logout Successfully!', 'success')
 
   };
@@ -92,7 +92,7 @@ export const Navbar = () => {
             ) : (
               <div
                 className='flex items-center space-x-1'
-                onClick={() => navigate('/frontend/admin/login')}
+                onClick={() => navigate('/admin/login')}
               >
                 <FaUserCircle className='text-[#344767]' />
                 <span className='text-[#344767] text-[14px] font-semibold'>Login</span>
@@ -101,7 +101,7 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
-      {showModal && <ProfileModal onClose={() => setShowModal(false)} user={{ name: adminName, role:role }} />}
+      {showModal && <ProfileModal onClose={() => setShowModal(false)} user={{ name: adminName, role: role }} />}
     </>
   );
 };

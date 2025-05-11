@@ -35,13 +35,13 @@ const usePaymentHandler = () => {
         razorpay_signature,
       });
       if (res.status === 200) {
-        navigate('/frontend/payment-success');
+        navigate('/payment-success');
       } else {
-        navigate('/frontend/payment-unsuccess');
+        navigate('/payment-unsuccess');
       }
     } catch (error) {
       console.error('Error during payment success handling: ', error);
-      navigate('/frontend/payment-unsuccess');
+      navigate('/payment-unsuccess');
     }
   };
 
@@ -85,7 +85,7 @@ const usePaymentHandler = () => {
     if (isAuthenticated) {
       await paymentHandler(price);
     } else {
-      navigate('/frontend/login');
+      navigate('/login');
     }
   };
 

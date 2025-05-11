@@ -16,19 +16,19 @@ const UserBox = ({ isMobile }) => {
   const settings = [
     {
       name: 'My Profile',
-      link: '/frontend/user-profile',
+      link: '/user-profile',
       icon: <IoPersonCircleOutline />,
     },
     {
       name: 'Study Material',
-      link: '/frontend/study-material',
+      link: '/study-material',
       icon: <MdOutlineLibraryBooks />,
     },
   ];
 
   const handleLogout = () => {
 
-    navigate('/frontend');
+    navigate('/');
     logout()
     window.location.reload();
   };
@@ -58,7 +58,7 @@ const UserBox = ({ isMobile }) => {
             height: '40px',
             borderRadius: '50%',
           }}
-          src={userAvatar ? userAvatar : "https://img.freepik.com/free-vector/handsome-man_1308-85984.jpg?size=626&ext=jpg"}
+          src={"https://img.freepik.com/free-vector/handsome-man_1308-85984.jpg?size=626&ext=jpg"}
           alt='Avtar'
         />
       </IconButton>

@@ -17,7 +17,7 @@ const engineeringOptions = [
       <Link key={5} to="https://marg-darshan.com/test-series/iit">
         JEE Main Test Series
       </Link>,
-      <Link key={6} to="/frontend/commingsoon">JEE Advanced Test Series</Link>,
+      <Link key={6} to="/commingsoon">JEE Advanced Test Series</Link>,
     ],
   },
   {
@@ -60,8 +60,8 @@ const neetOptions = [
       <Link key={2} to="https://marg-darshan.com/study-material/previous-year-paper/neet/neet-pyqs-with-solutions">
         Previous Year Questions
       </Link>,
-      <Link key={3} to="/frontend/commingsoon">Short Notes for NEET</Link>,
-      <Link key={4} to="/frontend/commingsoon">Complete Notes for NEET</Link>,
+      <Link key={3} to="//on">Short Notes for NEET</Link>,
+      <Link key={4} to="//on">Complete Notes for NEET</Link>,
     ],
   },
   {
@@ -126,7 +126,7 @@ const MobileNavbar = () => {
 
   return (
     <div className="flex flex-col bg-[#E5DDF8] p-4 pt-2 text-sm space-y-4 lg:hidden">
-      <Link to="frontend/mentorship">
+      <Link to="/iit-jee-mentorship">
         <div className="each-link cursor-pointer">Mentorship</div>
       </Link>
 
@@ -275,7 +275,7 @@ const MobileNavbar = () => {
           </div>
         </div>
       )}
-      <Link to="frontend/collegepredictor">
+      <Link to="/collegepredictor">
         <div className="each-link mb-3 cursor-pointer">College Predictor</div>
       </Link>
       <div>

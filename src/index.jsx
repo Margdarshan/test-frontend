@@ -68,40 +68,40 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<App />}>
-        <Route path="frontend" element={<Suspense fallback={<Loading />}><Home /></Suspense>} />
-        <Route path="frontend/mentorship" element={<Suspense fallback={<Loading />}><Mentorship /></Suspense>} />
-        <Route path="frontend/about" element={<Suspense fallback={<Loading />}><About /></Suspense>} />
-        <Route path="frontend/career-page" element={<Suspense fallback={<Loading />}> <CommingSoon /></Suspense>} />  {/* <CareerPage /> */}
-        <Route path="frontend/blog" element={<Suspense fallback={<Loading />}> <LandingPage /></Suspense>} />
-        <Route path="frontend/blog/:blog_title/:id" element={<Suspense fallback={<Loading />}><BlogOpen /> </Suspense>} />
-        <Route path="frontend/contact" element={<Suspense fallback={<Loading />}><Contact /></Suspense>} />
-        <Route path="frontend/login" element={<Suspense fallback={<Loading />}><Login /></Suspense>} />
-        <Route path="frontend/google-auth-success" element={<AuthCallbackHandler />} />
-        <Route path="frontend/privacypolicy" element={<Suspense fallback={<Loading />}><PrivacyPolicy /></Suspense>} />
-        <Route path="frontend/refund-cancel" element={<Suspense fallback={<Loading />}><RefundCancel /></Suspense>} />
-        <Route path="frontend/shipping" element={<Suspense fallback={<Loading />}><Shipping /></Suspense>} />
-        <Route path="frontend/terms-and-conditions" element={<Suspense fallback={<Loading />}><TermCondition /></Suspense>} />
-        <Route path="frontend/collegepredictor" element={<Suspense fallback={<Loading />}><CollegePredictor /></Suspense>} />
-        <Route path="frontend/collegepredictorresult" element={<Suspense fallback={<Loading />}><CollegePredictorResult /></Suspense>} />
-        <Route path="frontend/Error404" element={<Suspense fallback={<Loading />}><Error404 /></Suspense>} />
-        <Route path="frontend/ErrorTrigger" element={<Suspense fallback={<Loading />}><ErrorTrigger /></Suspense>} />
-        <Route path="frontend/commingsoon1" element={<Suspense fallback={<Loading />}><CommingSoon1 /></Suspense>} />
-        <Route path="frontend/commingsoon" element={<Suspense fallback={<Loading />}><CommingSoon /></Suspense>} />
-        <Route path="frontend/PersonalDetails" element={<Suspense fallback={<Loading />}><PersonalDetails /></Suspense>} />
-        <Route path="frontend/payment-success" element={<Suspense fallback={<Loading />}><PaymentSuccess /></Suspense>} />
-        <Route path="frontend/payment-unsuccess" element={<Suspense fallback={<Loading />}><PaymentUnSuccess /></Suspense>} />
-        <Route path="frontend/cart" element={<Suspense fallback={<Loading />}><Cart /></Suspense>} />
-        <Route path="frontend/study-material" element={<Suspense fallback={<Loading />}><StudyMaterial /></Suspense>} />
-        <Route path="frontend/text-books" element={<Suspense fallback={<Loading />}><Textbook /></Suspense>} />
-        <Route path='frontend/comp-books' element={<Suspense fallback={<Loading />}><Compbooks /></Suspense>} />
-        <Route path='frontend/previous-year' element={<Suspense fallback={<Loading />}><Previousyear /></Suspense>} />
-        <Route path='frontend/revision-notes' element={<Suspense fallback={<Loading />}><Revision /></Suspense>} />
-        <Route path="frontend/user-profile" element={<Suspense fallback={<Loading />}><Profile /></Suspense>} />
-        <Route path="frontend/add" element={<Suspense fallback={<Loading />}><AddBlog /></Suspense>} />
+        <Route path="" element={<Suspense fallback={<Loading />}><Home /></Suspense>} />
+        <Route path="/iit-jee-mentorship" element={<Suspense fallback={<Loading />}><Mentorship /></Suspense>} />
+        <Route path="/about" element={<Suspense fallback={<Loading />}><About /></Suspense>} />
+        <Route path="/career-page" element={<Suspense fallback={<Loading />}> <CommingSoon /></Suspense>} />  {/* <CareerPage /> */}
+        <Route path="/blog" element={<Suspense fallback={<Loading />}> <LandingPage /></Suspense>} />
+        <Route path="/blog/:blog_title/:id" element={<Suspense fallback={<Loading />}><BlogOpen /> </Suspense>} />
+        <Route path="/contact" element={<Suspense fallback={<Loading />}><Contact /></Suspense>} />
+        <Route path="/login" element={<Suspense fallback={<Loading />}><Login /></Suspense>} />
+        <Route path="/google-auth-success" element={<AuthCallbackHandler />} />
+        <Route path="/privacypolicy" element={<Suspense fallback={<Loading />}><PrivacyPolicy /></Suspense>} />
+        <Route path="/refund-cancel" element={<Suspense fallback={<Loading />}><RefundCancel /></Suspense>} />
+        <Route path="/shipping" element={<Suspense fallback={<Loading />}><Shipping /></Suspense>} />
+        <Route path="/terms-and-conditions" element={<Suspense fallback={<Loading />}><TermCondition /></Suspense>} />
+        <Route path="/jee-main/collegepredictor" element={<Suspense fallback={<Loading />}><CollegePredictor /></Suspense>} />
+        <Route path="/collegepredictorresult" element={<Suspense fallback={<Loading />}><CollegePredictorResult /></Suspense>} />
+        <Route path="/Error404" element={<Suspense fallback={<Loading />}><Error404 /></Suspense>} />
+        <Route path="/ErrorTrigger" element={<Suspense fallback={<Loading />}><ErrorTrigger /></Suspense>} />
+        <Route path="/commingsoon1" element={<Suspense fallback={<Loading />}><CommingSoon1 /></Suspense>} />
+        <Route path="/commingsoon" element={<Suspense fallback={<Loading />}><CommingSoon /></Suspense>} />
+        <Route path="/PersonalDetails" element={<Suspense fallback={<Loading />}><PersonalDetails /></Suspense>} />
+        <Route path="/payment-success" element={<Suspense fallback={<Loading />}><PaymentSuccess /></Suspense>} />
+        <Route path="/payment-unsuccess" element={<Suspense fallback={<Loading />}><PaymentUnSuccess /></Suspense>} />
+        <Route path="/cart" element={<Suspense fallback={<Loading />}><Cart /></Suspense>} />
+        <Route path="/study-material" element={<Suspense fallback={<Loading />}><StudyMaterial /></Suspense>} />
+        <Route path="/text-books" element={<Suspense fallback={<Loading />}><Textbook /></Suspense>} />
+        <Route path='/comp-books' element={<Suspense fallback={<Loading />}><Compbooks /></Suspense>} />
+        <Route path='/previous-year' element={<Suspense fallback={<Loading />}><Previousyear /></Suspense>} />
+        <Route path='/revision-notes' element={<Suspense fallback={<Loading />}><Revision /></Suspense>} />
+        <Route path="/user-profile" element={<Suspense fallback={<Loading />}><Profile /></Suspense>} />
+        <Route path="/add" element={<Suspense fallback={<Loading />}><AddBlog /></Suspense>} />
 
       </Route>
 
-      <Route path="/frontend/admin" element={<ProtectedRoute> <AdminLayout /> </ProtectedRoute>}>
+      <Route path="/admin" element={<ProtectedRoute> <AdminLayout /> </ProtectedRoute>}>
         <Route path="blog-list" element={<Suspense fallback={<Loading />}><BlogList /></Suspense>} />
         <Route path="blog-comment" element={<Suspense fallback={<Loading />}><CommentList /></Suspense>} />
         <Route path="blog-category" element={<Suspense fallback={<Loading />}><CategoryList /></Suspense>} />
@@ -118,9 +118,9 @@ const router = createBrowserRouter(
         <Route path="study-material/categories/subcategories/material" element={<Suspense fallback={<Loading />}><StudyMaterialSubcategoryMaterialAdmin /></Suspense>} />
       </Route>
 
-      <Route path="/frontend/admin/login" element={<Suspense fallback={<Loading />}> <AdminLogin /></Suspense>} />
+      <Route path="/admin/login" element={<Suspense fallback={<Loading />}> <AdminLogin /></Suspense>} />
 
-      <Route path="*" element={<Navigate to="/frontend/Error404" replace />} />
+      <Route path="*" element={<Navigate to="/Error404" replace />} />
     </>
   )
 );

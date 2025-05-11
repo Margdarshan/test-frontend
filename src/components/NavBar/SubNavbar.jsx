@@ -5,7 +5,7 @@ import { IoCaretDownOutline } from 'react-icons/io5';
 import { FaRegFile } from 'react-icons/fa';
 import { CgNotes } from 'react-icons/cg';
 import DropdownPanel from './DropdownPanel';
-import PropTypes from 'prop-types'; 
+import PropTypes from 'prop-types';
 
 const SubNavbar = (props) => {
   const [showDropdown, setShowDropdown] = useState({
@@ -35,15 +35,15 @@ const SubNavbar = (props) => {
       title: 'Study Material',
       icon: <FaRegFile />,
       items: [
-        ['Comprehensive Formula Books', '/frontend/comp-books'],
-        ['Textbooks and Practice Notebooks', '/frontend/text-books'],
-        ['Revision Notes', '/frontend/revision-notes'],
-        ['Previous Year Paper for JEE', '/frontend/previous-year'],
-        ['Detailed Topic Wise Notes', '/frontend/commingsoon'],
+        ['Comprehensive Formula Books', '/comp-books'],
+        ['Textbooks and Practice Notebooks', '//s'],
+        ['Revision Notes', '//notes'],
+        ['Previous Year Paper for JEE', '//year'],
+        ['Detailed Topic Wise Notes', '//on'],
       ],
       // items: [
       //   ["JEE Main Test Series", "https://marg-darshan.com/test-series/iit"],
-      //   ["JEE Advanced Test Series", "/frontend/commingsoon"],
+      //   ["JEE Advanced Test Series", "//on"],
       // ],
       onMouseEnter: () => handleMouseEnter('engineeringStudyMaterial'),
       onMouseLeave: () => handleMouseLeave('engineeringStudyMaterial'),
@@ -54,12 +54,12 @@ const SubNavbar = (props) => {
       title: 'Test Series',
       icon: <FaRegFile />,
       items: [
-        ['JEE Main Test Series', '/frontend/commingsoon'],
-        ['JEE Advanced Test Series', '/frontend/commingsoon'],
+        ['JEE Main Test Series', '//on'],
+        ['JEE Advanced Test Series', '//on'],
       ],
       // items: [
       //   ["JEE Main Test Series", "https://marg-darshan.com/test-series/iit"],
-      //   ["JEE Advanced Test Series", "/frontend/commingsoon"],
+      //   ["JEE Advanced Test Series", "//on"],
       // ],
       onMouseEnter: () => handleMouseEnter('engineeringTestSeries'),
       onMouseLeave: () => handleMouseLeave('engineeringTestSeries'),
@@ -69,9 +69,9 @@ const SubNavbar = (props) => {
       title: 'Exams',
       icon: <CgNotes />,
       items: [
-        ['JEE Main', '/frontend/commingsoon'],
-        ['JEE Advanced', '/frontend/commingsoon'],
-        ['BITSAT', '/frontend/commingsoon'],
+        ['JEE Main', '//on'],
+        ['JEE Advanced', '//on'],
+        ['BITSAT', '//on'],
       ],
       // items: [
       //   ["NCERT", "https://marg-darshan.com/study-material/ncert-books/ncert-books-for-class-12th/ncert-books-for-class-12th-overall"],
@@ -88,8 +88,8 @@ const SubNavbar = (props) => {
       title: 'Top 10 Colleges',
       icon: <MdOutlineAssignment />,
       items: [
-        ['Last year cutoff for JoSAA', '/frontend/commingsoon'],
-        ['Marks vs Percentile for JEE Mains', '/frontend/commingsoon'],
+        ['Last year cutoff for JoSAA', '//on'],
+        ['Marks vs Percentile for JEE Mains', '//on'],
       ],
       onMouseEnter: () => handleMouseEnter('engineeringColleges'),
       onMouseLeave: () => handleMouseLeave('engineeringColleges'),
@@ -99,8 +99,8 @@ const SubNavbar = (props) => {
       title: 'Quick Links',
       icon: <FaRegFile />,
       items: [
-        ['Last year cutoff for JoSAA', '/frontend/commingsoon'],
-        ['Marks vs Percentile for JEE Mains', '/frontend/commingsoon'],
+        ['Last year cutoff for JoSAA', '//on'],
+        ['Marks vs Percentile for JEE Mains', '//on'],
       ],
       onMouseEnter: () => handleMouseEnter('quickLinksEngineering'),
       onMouseLeave: () => handleMouseLeave('quickLinksEngineering'),
@@ -113,11 +113,11 @@ const SubNavbar = (props) => {
       title: 'Study Material',
       icon: <FaRegFile />,
       items: [
-        ['Comprehensive Formula Books', '/frontend/commingsoon'],
-        ['Textbooks and Practice Notebooks', '/frontend/commingsoon'],
-        ['Revision Notes', '/frontend/commingsoon'],
-        ['Previous Year Paper', '/frontend/commingsoon'],
-        ['Detailed Topic Wise Notes', '/frontend/commingsoon'],
+        ['Comprehensive Formula Books', '//on'],
+        ['Textbooks and Practice Notebooks', '//on'],
+        ['Revision Notes', '//on'],
+        ['Previous Year Paper', '//on'],
+        ['Detailed Topic Wise Notes', '//on'],
       ],
       onMouseEnter: () => handleMouseEnter('managementStudyMaterial'),
       onMouseLeave: () => handleMouseLeave('managementStudyMaterial'),
@@ -127,13 +127,13 @@ const SubNavbar = (props) => {
       title: 'Test Series',
       icon: <CgNotes />,
       items: [
-        ['CAT Test Series', '/frontend/commingsoon'],
-        ['XAT Test Series', '/frontend/commingsoon'],
+        ['CAT Test Series', '//on'],
+        ['XAT Test Series', '//on'],
       ],
       // items: [
       //   ["Previous Year Questions", "https://marg-darshan.com/study-material/previous-year-paper/neet/neet-pyqs-with-solutions"],
-      //   ["Short Notes for NEET", "/frontend/commingsoon"],
-      //   ["Complete Notes for NEET", "/frontend/commingsoon"],
+      //   ["Short Notes for NEET", "//on"],
+      //   ["Complete Notes for NEET", "//on"],
       // ],
       onMouseEnter: () => handleMouseEnter('managementTestSeries'),
       onMouseLeave: () => handleMouseLeave('managementTestSeries'),
@@ -143,9 +143,9 @@ const SubNavbar = (props) => {
       title: 'Exams',
       icon: <MdOutlineAssignment />,
       items: [
-        ['CAT', '/frontend/commingsoon'],
-        ['XAT', '/frontend/commingsoon'],
-        ['SNAP', '/frontend/commingsoon'],
+        ['CAT', '//on'],
+        ['XAT', '//on'],
+        ['SNAP', '//on'],
       ],
       onMouseEnter: () => handleMouseEnter('managementExams'),
       onMouseLeave: () => handleMouseLeave('managementExams'),
@@ -155,8 +155,8 @@ const SubNavbar = (props) => {
       title: 'Top 10 Colleges',
       icon: <MdOutlineAssignment />,
       items: [
-        ['Last year cutoff for JoSAA', '/frontend/commingsoon'],
-        ['Marks vs Percentile for JEE Mains', '/frontend/commingsoon'],
+        ['Last year cutoff for JoSAA', '//on'],
+        ['Marks vs Percentile for JEE Mains', '//on'],
       ],
       onMouseEnter: () => handleMouseEnter('managementColleges'),
       onMouseLeave: () => handleMouseLeave('managementColleges'),
@@ -166,8 +166,8 @@ const SubNavbar = (props) => {
       title: 'Quick Links',
       icon: <FaRegFile />,
       items: [
-        ['Last year cutoff for MBA', '/frontend/commingsoon'],
-        ['Marks vs Percentile for CAT', '/frontend/commingsoon'],
+        ['Last year cutoff for MBA', '//on'],
+        ['Marks vs Percentile for CAT', '//on'],
       ],
       onMouseEnter: () => handleMouseEnter('quickLinksManagement'),
       onMouseLeave: () => handleMouseLeave('quickLinksManagement'),
@@ -292,6 +292,6 @@ const SubNavbar = (props) => {
   );
 };
 SubNavbar.propTypes = {
-  isEngineering: PropTypes.bool, 
+  isEngineering: PropTypes.bool,
 };
 export default SubNavbar;

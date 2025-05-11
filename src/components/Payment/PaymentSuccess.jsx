@@ -91,7 +91,7 @@ const PaymentSuccess = ({ closeModal }) => {
             variant="outlined"
             color="primary"
             sx={{ mt: 2, color: '#6200EA', borderColor: '#6200EA' }}
-            onClick={() => navigate('/frontend/')}
+            onClick={() => navigate('/')}
           >
             Back to Home
           </Button>

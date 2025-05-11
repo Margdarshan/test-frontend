@@ -18,12 +18,12 @@ import UserBox from './UserBox';
 export const settings = [
   {
     name: 'My Profile',
-    link: 'frontend/user-profile',
+    link: '/user-profile',
     icon: <IoPersonCircleOutline />,
   },
   {
     name: 'Study Material',
-    link: 'frontend/study-material',
+    link: '/study-material',
     icon: <MdOutlineLibraryBooks />,
   },
 ];
@@ -122,7 +122,7 @@ const TempNavbar = () => {
           <div className="max-w-full mx-[20px] md:mx-[20px] lg:mx-[50px]  sm:px-2 lg:px-4 xl:px-8  bg-white sm:shadow-xl rounded-2xl mt-2 ">
             <div className="flex items-center justify-between h-16 pl-2   ">
               <div className="brand">
-                <Link to="/frontend/" onClick={scrollToTop}>
+                <Link to="/" onClick={scrollToTop}>
                   <img
                     className="w-32"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/0aebaa194f27814b6b5dbaaaac4c871842ff75e1e998dbe32161c0197fd5c04a?apiKey=9a32bc866e724018820ce764b81eba46&"
@@ -185,7 +185,7 @@ const TempNavbar = () => {
                     <div className="each-item pt-3">
                       <Link
 
-                        to="frontend/collegepredictor"
+                        to="/jee-main/collegepredictor"
                         onClick={scrollToTop}
                         className=" hover:text-[#4E18CD] no-underline hover:no-underline cursor-pointer text-[#292929] text-md font-normal"
                       >

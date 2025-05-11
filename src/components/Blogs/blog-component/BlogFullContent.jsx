@@ -167,8 +167,8 @@ const BlogFullContent = ({ blog, commentCount, token, handleOpenLoginModal }) =>
       <h2 className="text-2xl font-semibold text-purple-600 mt-8 text-center sm:text-left">Full Blog Description</h2>
       <div className="blog-content" dangerouslySetInnerHTML={{ __html: blog.content }}></div>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4 my-4">
-        <MentorImageCard bgColor={"#BA16FF"} navigateToLink={"/frontend/mentorship"} name={"Need Mentorship?"} description={"Discover your path: Elevate your studies with Personalized Mentorship. Let's achieve your academic goals together."} />
-        <MentorImageCard bgColor={"#000000"} navigateToLink={"/frontend/collegepredictor"} name={"College Predictor"} description={"Unlock you future: Use our college predictor to find the best fit for your dreams."} />
+        <MentorImageCard bgColor={"#BA16FF"} navigateToLink={"/iit-jee-mentorship"} name={"Need Mentorship?"} description={"Discover your path: Elevate your studies with Personalized Mentorship. Let's achieve your academic goals together."} />
+        <MentorImageCard bgColor={"#000000"} navigateToLink={"//edictor"} name={"College Predictor"} description={"Unlock you future: Use our college predictor to find the best fit for your dreams."} />
       </div>
     </div>
   );

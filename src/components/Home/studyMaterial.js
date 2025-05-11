@@ -15,7 +15,7 @@ export const mentorshipData = [
     https://cdn.builder.io/api/v1/image/assets/TEMP/aec8fb8eee18947cad20f8b1f282c2ed206dca01268170ac907b942c27ff8739?placeholderIfAbsent=true&apiKey=9a32bc866e724018820ce764b81eba46&width=1600 1600w,
     https://cdn.builder.io/api/v1/image/assets/TEMP/aec8fb8eee18947cad20f8b1f282c2ed206dca01268170ac907b942c27ff8739?placeholderIfAbsent=true&apiKey=9a32bc866e724018820ce764b81eba46&width=2000 2000w
   `,
-    buttonLink: ['/frontend/mentorship'],
+    buttonLink: ['/iit-jee-mentorship'],
   },
 ];
 export const mentorshipKey = ['Mentorship'];
@@ -37,11 +37,7 @@ export const collegePredictorData = [
         https://cdn.builder.io/api/v1/image/assets/TEMP/da67c8b95252c22235e1398845451ef277e8696054f9ef4f58667a8df267d9aa?apiKey=e174ca3f35c3479eb4e493563d3d05eb&width=1600 1600w,
         https://cdn.builder.io/api/v1/image/assets/TEMP/da67c8b95252c22235e1398845451ef277e8696054f9ef4f58667a8df267d9aa?apiKey=e174ca3f35c3479eb4e493563d3d05eb&width=2000 2000w
       `,
-    buttonLink: [
-      '/frontend/collegepredictor',
-      '/frontend/commingsoon',
-      '/frontend/commingsoon',
-    ],
+    buttonLink: ['//edictor', '//on', '//on'],
   },
 ];
 
@@ -68,12 +64,7 @@ export const studyMaterialData = [
     https://cdn.builder.io/api/v1/image/assets/TEMP/c692730cc028549d4ea650757f3cacd0c298d05ffa7b087acc43655257cbb846?apiKey=e174ca3f35c3479eb4e493563d3d05eb&width=1600 1600w,
     https://cdn.builder.io/api/v1/image/assets/TEMP/c692730cc028549d4ea650757f3cacd0c298d05ffa7b087acc43655257cbb846?apiKey=e174ca3f35c3479eb4e493563d3d05eb&width=2000 2000w
   `,
-    buttonLink: [
-      '/frontend/revision-notes',
-      '/frontend/text-books',
-      '/frontend/previous-year',
-      '/frontend/comp-books',
-    ],
+    buttonLink: ['//notes', '//s', '//year', '//s'],
   },
 ];
 export const studyMaterialKey = [
@@ -100,7 +91,7 @@ export const testSeriesData = [
           https://cdn.builder.io/api/v1/image/assets/TEMP/370a0313f95c36c28c163f3fa81198615d0385ed7b8a313041388490fb6638e4?apiKey=e174ca3f35c3479eb4e493563d3d05eb&width=1600 1600w,
           https://cdn.builder.io/api/v1/image/assets/TEMP/370a0313f95c36c28c163f3fa81198615d0385ed7b8a313041388490fb6638e4?apiKey=e174ca3f35c3479eb4e493563d3d05eb&width=2000 2000w
     `,
-    buttonLink: ['/frontend/commingsoon'],
+    buttonLink: ['//on'],
   },
 ];
 export const testSeriesKey = ['For JEE'];

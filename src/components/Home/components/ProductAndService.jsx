@@ -178,7 +178,7 @@ const ProductsAndServices = () => {
             and guide you towards success with clarity and assurance.
           </Description>
           <ButtonContainer>
-            <ButtonItem variant="contained" component={Link} to="/mentorship">
+            <ButtonItem variant="contained" component={Link} to="/iit-jee-mentorship">
               Mentorship
             </ButtonItem>
           </ButtonContainer>

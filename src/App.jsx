@@ -1,4 +1,4 @@
-import React, { Suspense, lazy} from 'react';
+import React, { Suspense, lazy } from 'react';
 import './App.css';
 import './index.css';
 import { Outlet, useLocation } from 'react-router-dom';
@@ -11,7 +11,7 @@ const TempNavbar = lazy(() => import('./components/NavBar/TempNavbar'));
 
 function App() {
   const location = useLocation();
-  const hideNavbarRoutes = ['/frontend/PersonalDetails'];
+  const hideNavbarRoutes = ['/PersonalDetails'];
   const shouldHideTempNavbar = hideNavbarRoutes.includes(location.pathname);
 
   return (
