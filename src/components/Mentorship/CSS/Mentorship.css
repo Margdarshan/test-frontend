@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+.hero {
+  background-image: url('../img/Hero/Vector.png');
+  background-size: cover;
+  background-position: center;
+}
+/* CSS/App.css */
+
+.blur {
+  filter: blur(5px);
+  transition: filter 0.3s ease-in-out;
+}
+
+/* Modal overlay styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
